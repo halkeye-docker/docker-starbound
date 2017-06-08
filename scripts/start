@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mkdir -p /data
+
+# Copy default config in place
+#[ -f /data/starbound.config ] || cp /etc/starbound/starbound.config /data
+
+# Setup StarryPy
+#[ -f /data/config.json ] || cp /opt/StarryPy/config/config.json.default /data/config.json
+#ln -nsf /data/config.json /opt/StarryPy/config
+
+cd /opt/starbound/linux
+./starbound_server &
+sleep 5
+
+# Run StarryPy
+cd /opt/StarryPy
+python server.py
