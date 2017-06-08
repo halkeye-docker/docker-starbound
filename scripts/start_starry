@@ -1,4 +1,0 @@
-# Run StarryPy
-cd /opt/StarryPy
-python server.py
-
