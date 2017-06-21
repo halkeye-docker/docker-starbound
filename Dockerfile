@@ -10,7 +10,7 @@
 
 
 # Base system is the latest version of Ubuntu.
-FROM   ubuntu:14.04
+FROM ubuntu:14.04
 MAINTAINER Gavin Mogan, docker@gavinmogan.com
 
 # Make sure we don't get notifications we can't answer during building.
